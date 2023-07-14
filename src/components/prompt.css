@@ -1,0 +1,51 @@
+/*  Prompt section */
+
+#prompt{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+
+  background-color: var(--color-bg);
+}
+#prompt h1{
+
+  font-family: sans-serif;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  font-size: 4.7rem;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+  width: 100%;
+  height: auto;
+}
+.wrapper input{
+  font-size: 1.2rem;
+  width: 100%;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2% 4%;
+  margin-top: 3%;
+  transition: all .5s linear;
+}
+.wrapper input:hover, .wrapper input:focus{
+  border-color: var(--color-active);
+}
+#submit{
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  transform: translate(-110%,30%);
+  transition: all .5s linear;
+  cursor: pointer;
+}
+#submit:hover>svg{
+  fill: var(--color-active);
+}
