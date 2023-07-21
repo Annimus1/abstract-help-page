@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   padding-right: 15px;
-  padding-bottom: 48px;
+  padding-bottom: 7%;
 }
 .item img{
   width: 80px;
@@ -29,3 +29,20 @@
   justify-self: end;
   color: var(--color-active);
 }
+
+@media only screen and (max-width: 870px) {
+  .item{
+    height: 250px;
+    min-width: auto;
+    width: auto;
+    padding: 0;
+    margin-bottom: 48px;
+  }
+  .item h3{
+    font-size: 20px;
+  }
+  .item p{
+    font-size: 1.2rem;
+  }
+}
+

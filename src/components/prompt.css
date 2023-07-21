@@ -49,3 +49,17 @@
 #submit:hover>svg{
   fill: var(--color-active);
 }
+
+@media only screen and (max-width: 800px) {
+  #prompt h1{
+    font-size: 2.7rem;
+  }
+  .wrapper{
+    max-width: 100%;
+    margin-left: 5% ;
+
+  }
+  .wrapper input{
+    
+  }
+} 

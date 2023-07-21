@@ -1,24 +1,25 @@
 /* Header Section */
 header{
-  height: 5.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  min-height: 5.5rem;
+  width: 100%;
   padding: 1.6rem 7%;
   color: var(--color-white);
   background-color: var(--color-black);
 }
-
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2%; 
+}
 header div{
   display: flex;
   align-items: center;
 }
-
 #logo{
   height: 2rem;
   cursor: pointer;
 }
-
 #help-center{
   font-size: 1.5rem;
   font-family: sans-serif;
@@ -65,3 +66,103 @@ header div{
   color: var(--color-white);
   border-color: var(--color-white);
 }
+
+#search{
+  fill: var(--color-white);
+  width: 28px;
+  height: 28px;
+}
+/* Menu */
+.visible{
+  display: flex;
+}
+.hidden{
+  display: none;
+}
+.menu{
+  height: 30vh;
+  position: absolute;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+  font-size: 1.6rem;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: var(--color-black);
+  border-top: solid 1px gray;
+}
+#border{
+  border-bottom: 1px solid var(--color-white);
+}
+.menu a{
+  display: block;
+  width: 50%;
+  padding: 20px;
+  color: var(--color-white);
+  transition: color .3s ease-out;
+  /* background-color: gray; */
+}
+.menu a:hover{
+  color: gray;
+}
+
+
+
+/* hamburger button */
+.hwrapper{
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* background-color: gray; */
+  cursor:pointer;
+}
+.line{
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: var(--color-white);
+  transition: all .5s ease-out ;
+}
+.active.line1{
+  position: absolute;
+  width: 120%;
+  transform: rotate(45deg);
+}
+.active.line2{
+  display: none;
+}
+.active.line3{
+  position: absolute;
+  width: 120%;
+  transform: rotate(-45deg);
+}
+
+
+@media only screen and (max-width: 1200px) {
+  #buttons{
+    display: none ;
+  }
+  header{
+    width: 100vw;
+    justify-content: space-around;
+  }
+  #logo{
+    font-size: 1rem;
+  }
+  #help-center{
+    font-size: 1rem;
+  }
+} 
+
+@media only screen and (min-width: 1201px) {
+  #icons{
+    display: none ;
+  }
+  .menu{
+    display: none;
+  }
+} 
