@@ -6,28 +6,32 @@
   font-family: sans-serif;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-right: 15px;
   padding-bottom: 7%;
 }
 .item img{
-  width: 80px;
+  width: 150px;
   margin-right: 2rem;
 }
 .item h3{
-  font-size: 26px;
+  font-size: 32px;
   text-align: start;
   margin-bottom: 15px;
 }
 .item p{
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: start;
   margin-bottom: 30px;
 }
 .item a{
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-family: sans-serif;
   justify-self: end;
   color: var(--color-active);
+}
+.info_wrapper{
+  width: 100%;
 }
 
 @media only screen and (max-width: 870px) {
@@ -43,6 +47,9 @@
   }
   .item p{
     font-size: 1.2rem;
+  }
+  .item img{
+    width: 90px;
   }
 }
 

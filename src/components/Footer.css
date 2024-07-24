@@ -1,0 +1,13 @@
+footer{
+    display: grid;
+    grid-template-rows: 4;
+    grid-auto-rows: 1fr;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
